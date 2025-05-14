@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+    .figure-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      flex-wrap: wrap;
+    }
+    .figure-row:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .figure-image {
+      flex: 1;
+      padding: 10px;
+    }
+    .figure-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .figure-text {
+      flex: 1;
+      padding: 10px;
+    }
+    h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="figure-row">
+      <div class="figure-image">
+        <img src="wmpwithlegend.jpg" alt="Figure 1">
+      </div>
+      <div class="figure-text">
+        <h2>世界牛奶價格分布圖（TWD／每公升）</h2>
+        <p>本圖顯示全球牛奶價格高度落差，台灣以每公升約 55 元屬中高價區，而美國、紐西蘭等乳品出口大國則多落在 30 元以下。這樣的價格差異說明在全球貿易體系下，台灣鮮乳在成本與價格上處於劣勢。特別是當這些低價國家的乳品以冰磚奶形式大量進口時，對本地酪農產生強烈競爭壓力。
+根據上下游報導指出，台灣酪農面臨進口乳品價格倒掛問題，導致乳價無法反映生產成本，引發產業長期低迷與退場潮。</p>
+      </div>
+    </div>
+
+    <div class="figure-row">
+      <div class="figure-image">
+        <img src="加工廠 x 鄉鎮累計牧場量full.jpg" alt="Figure 2">
+      </div>
+      <div class="figure-text">
+        <h2>乳品加工廠位置與乳牛場分布圖</h2>
+        <p>圖中展示乳牛場主要集中在台南柳營、雲林崙背與屏東萬丹等農業鄉鎮，顯示出鮮乳生產的地域集中性。與此同時，加工廠的分布則相對分散，造成部分生產重鎮缺乏鄰近加工設施支援。此圖揭示出酪農需長途運送生乳，增加運輸成本與冷鏈風險。
+上下游專題指出，不少酪農為了保持乳品新鮮，只能自行負擔運輸與初步冷藏，政府補助資源並未平均分布至偏遠地區，反映基礎設施落差。</p>
+      </div>
+    </div>
+
+    <div class="figure-row">
+      <div class="figure-image">
+        <img src="加工廠x累計頭數.jpg" alt="Figure 3">
+      </div>
+      <div class="figure-text">
+        <h2>縣市乳牛頭數分布圖</h2>
+        <p>圖表以 Choropleth 呈現各縣市乳牛飼養頭數，彰化、雲林與嘉義縣是台灣鮮乳的主要生產核心，頭數顯著高於其他地區。相對地，東部地區與大多數都市地區幾乎沒有乳牛飼養，形成極端空間分布不均。
+根據報導，南部與中部的酪農承擔全台鮮乳供應量超過六成，但在土地、氣候與環境條件下的生產壓力卻難以獲得對等資源配置與永續政策回應。</p>
+      </div>
+    </div>
+
+    <div class="figure-row">
+      <div class="figure-image">
+        <img src="buffer30km.jpg" alt="Figure 4">
+      </div>
+      <div class="figure-text">
+        <h2>乳品加工廠 30 公里服務範圍圖</h2>
+        <p>此圖以黃色圓圈表示各加工廠的 30 公里可達服務範圍，與各鄉鎮的乳牛場分布疊合比較。圖中可見部分花東、南投等地區落在服務死角，表示當地酪農缺乏即時的處理與收購支援，導致鮮乳無法進入正式產銷體系。
+上下游指出，這些未被涵蓋的地區酪農常需自建冷藏與運送系統，不僅耗費人力與成本，且易影響乳品品質與收入穩定。</p>
+      </div>
+    </div>
+
+    <div class="figure-row">
+      <div class="figure-image">
+        <img src="截圖 2025-05-15 凌晨3.28.02.png" alt="Figure 5">
+      </div>
+      <div class="figure-text">
+        <h2>縣市乳牛頭數長條圖</h2>
+        <p>透過長條圖可清晰看出彰化與雲林兩地乳牛頭數遠超過其他縣市，呈現供應主力地區的壓力與責任。其他如嘉義、高雄也屬重要產地。這種高度集中容易產生區域污染、疾病風險與飼料成本波動問題。
+根據報導，頭數高地區的酪農經常面對環保法規的挑戰，以及與其他農業用地競爭的壓力，卻未見政策提供系統性協助。</p>
+      </div>
+    </div>
+
+    <div class="figure-row">
+      <div class="figure-image">
+        <img src="'截圖 2025-05-15 凌晨3.28.46.png'" alt="Figure 6">
+      </div>
+      <div class="figure-text">
+        <h2>2014–2023年自給率與國內供應趨勢圖</h2>
+        <p>本圖以雙軸結合折線與長條，顯示近十年台灣鮮乳的國內總供應量與自給率變化。雖然供應量穩定成長，但自給率於 2020 年跌至 87%，說明大量乳品已依賴進口替代。儘管近年略有回升，結構性問題仍未解決。
+上下游指出，酪農退出率上升、新農進場困難及冰磚奶關稅不對等是主因，顯示現行政策未能有效回應產業韌性問題。</p>
+      </div>
+    </div>
+
+    <div class="figure-row">
+      <div class="figure-image">
+        <img src="'/Users/wuzhixuan/Desktop/websites/截圖 2025-05-15 凌晨3.23.12.png'" alt="Figure 7">
+      </div>
+      <div class="figure-text">
+        <h2>進口乳品來源國分布圖</h2>
+        <p>本圖呈現 2023 年台灣乳品進口來源國，以環狀比例顯示美國、紐西蘭、法國等國為主要供應者，其中美、紐兩國合計占比已過半。這些國家多為全球乳價最低地區，進口冰磚奶成本遠低於本地生產。
+根據報導，進口冰磚奶以低價壓制國產鮮乳在通路的競爭力，零售端更傾向進口品，造成本土酪農經濟惡化與市場邊緣化。</p>
+      </div>
+    </div>
+
+    <div class="figure-row">
+      <div class="figure-image">
+        <img src="https://via.placeholder.com/400x300" alt="Figure 8">
+      </div>
+      <div class="figure-text">
+        <h2>Figure 8 Title</h2>
+        <p>Description for figure 8 goes here.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
